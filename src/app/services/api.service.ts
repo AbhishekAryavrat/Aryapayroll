@@ -19,6 +19,16 @@ export class ApiService {
     }
 
     
+    sortData(sortingId: String,sortingValue:String):Observable<any>{
+      let apiUrl = `http://43.224.1.48:8080/ondemand/ronak/applications/index?branch_id=1&sort_by=${sortingId}&sort=${sortingValue}`;
+     return this.http.get(apiUrl).pipe(
+        catchError(this.errorMgmt)
+      )
+    }
+
+
+
+    
   //Create method for manage errors when request and return response from the server
   errorMgmt(error: HttpErrorResponse) {
     try {
