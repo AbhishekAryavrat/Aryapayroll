@@ -1,0 +1,597 @@
+
+@media screen and (max-width:1580px) {
+.notificontent { width: 86%; }
+.nextdetails { width: 100%; }
+}
+
+@media screen and (max-width:1510px) {
+.notification-listing li p
+{
+	display: inline;
+	margin-right: 5px;
+}
+.notification-listing li i { margin-right: 10px; }
+.chatreply-box button { padding: 8px 16px; }
+.assigntimeduration ul li
+{
+	padding-right: 20px;
+	padding-left: 13px;
+}
+.assignsearch ul li { margin-bottom: 5px; }
+.ssnfromgroup input { width: 26%; }
+}
+
+@media screen and (max-width:1395px) {
+.notificons { margin-right: 10px; }
+.notificontent { width: 80%; }
+.notification-listing p small
+{
+	clear: both;
+	display: block;
+	width: 68%;
+	float: left;
+}
+.notification-head { margin-bottom: 3px; }
+.notification-listing li
+{
+	margin-bottom: 15px;
+	line-height: 20px;
+	padding-bottom: 8px;
+}
+.noteheader p input { width: 35%; }
+.associate-tablist li a { padding: 0 17px 10px; }
+.usercardboxs { padding: 5px 9px; }
+.noteuserdetail { width: 87%; }
+.noteuserdetail h4 span
+{
+	width: 57%;
+	text-align: left;
+	float: left;
+}
+.noteuserdetail h4 small
+{
+	clear: both;
+	display: block;
+}
+.chatsendbutton a { padding: 5px 6px; }
+.noteheader h3, .notification-listing li p, .associate-tablist li a, .according-header a, .currenttable table td, .filterapplybtn a { font-size: 13px; }
+.chatreply-box button { padding: 8px 10px; }
+.assignsearch ul li input { margin-bottom: 0px; }
+.assigntitle h3, .userdestails h3 { font-size: 17px; }
+.filterbutton a, .associatetitle h4, .currenttable table th, .currenttable table td, .assignment-table table th, .assignment-table table td { font-size: 12px; }
+.skill-listing li h4, .employee-history h4 { font-size: 15px; }
+.nextdetails { width: 395px; }
+.assouserid h4, .assousername h4, .assouserphone h4 { font-size: 13px; }
+.assouserid h4 i, .assousername h4 i, .assouserphone h4 i
+{
+	font-size: 13px;
+	width: 23px;
+	height: 23px;
+	line-height: 23px;
+}
+i.idicon { font-size: 13px !important; }
+.assouserid h4 i, .assousername h4 i, .assouserphone h4 i { margin-right: 1px; }
+.contactimage img
+{
+	width: 100%;
+	margin-bottom: 5px;
+	height: 100%;
+}
+}
+
+@media screen and (max-width:1220px) {
+.header-rightmenu ul li { padding-right: 8px; }
+.header-rightmenu li input
+{
+	font-size: 13px;
+	width: 278px;
+}
+.userdetailbox h4
+{
+	width: 78%;
+	margin: auto auto 15px auto;
+}
+.userdestails img { width: 19%; }
+.chatreply-box button { padding: 8px 11px; }
+.filterdetailbox
+{
+	right: -4%;
+	width: 248%;
+}
+.filterdetailbox:after, .filterdetailbox:before { right: 217px; }
+.applicantsearch ul li
+{
+	float: left;
+	width: 24%;
+}
+.assignsearch ul li input, .assignsearch ul li select { width: 100%; }
+.assigntitle h3
+{
+	line-height: 43px;
+	font-size: 15px;
+}
+.assignsearchead { padding: 0px 0 6px 0; }
+.assouserid, .assousername, .assouserphone { margin-top: 3px; }
+.assouserid h4 i, .assousername h4 i, .assouserphone h4 i
+{
+	width: 21px;
+	height: 21px;
+	line-height: 21px;
+}
+.associateuserdet { margin-top: 1.5%; }
+.applicantsearch .associatenames { width: 100%; }
+.hidden-responsive-scroll
+{
+	overflow-x: scroll !important;
+	overflow-y: scroll !important;
+}
+.workhistoryedit h4 {
+    font-size: 14px;
+}
+}
+
+@media screen and (max-width:1140px) {
+.header-rightmenu li input { width: 100%; }
+.actionitem ul li span { margin-right: 13px; }
+.middlewidth100
+{
+	max-width: 100%;
+	flex: 100%;
+}
+.actionitem ul li h5
+{
+	line-height: 49px;
+	width: auto;
+}
+.notification-listing li p { display: block; }
+.notification-listing p small
+{
+	width: auto;
+	float: none;
+	clear: inherit;
+	display: inline;
+}
+.nextdetails { width: 452px; }
+.dropdetails a
+{
+	font-size: 13px;
+	margin-right: 2px;
+	padding: 3px 5px;
+}
+.associateuser img { width: 90%; }
+.col-xl-2.col-md-2.col-2.assousercolumn
+{
+	flex: 0 0 30%;
+	max-width: 30%;
+}
+.logotext { font-size: 23px; }
+.header-navbar .navbar-header
+{
+	width: 145px;
+	margin: auto;
+	text-align: center;
+	padding: 0;
+}
+body.vertical-layout.vertical-menu-modern.menu-expanded .navbar .navbar-container { margin-left: 145px; }
+.profileavaila ul li
+{
+	width: 17%;
+	min-height: 210px;
+	margin-bottom: 20px;
+}
+.chatreply-box { margin: 15px 0px; }
+.chatreply-box button
+{
+	padding: 8px 6px;
+	margin-left: 5px;
+}
+a.bluebutton.table-invitebtn { width: 94%; }
+.workhistoryedit h4 {
+    font-size: 13px;
+}
+}
+
+@media screen and (max-width:992px) {
+.logotext { display: none; }
+.logoiconmd
+{
+	display: block;
+	width: 87%;
+	padding-top: 12px;
+	margin: auto;
+}
+.header-rightmenu i.la.la-user { font-size: 27px; }
+.header-rightmenu li span
+{
+	font-size: 16px;
+	line-height: 30px;
+}
+.chatreply-box textarea { width: 95%; }
+.filterdetailbox
+{
+	right: -4%;
+	width: 229%;
+}
+.associateuser img { width: 100%; }
+body.vertical-layout.vertical-menu-modern.menu-expanded .navbar .navbar-container
+{
+	margin-left: 45px;
+	padding: 0 5px
+}
+body.vertical-layout.vertical-menu-modern .navbar .navbar-header { width: 45px; }
+.logotext { padding-top: 1px; }
+.innermenu-content
+{
+	width: 260px !important;
+	padding-right: 10px !important;
+}
+.profileavaila ul li
+{
+	width: 29.33%;
+	margin-bottom: 20px;
+}
+.complateuser-detail h4
+{
+	padding-top: 2px;
+	word-break: break-all;
+	width: 78%;
+}
+.addlocation-listing h3 {
+    font-size: 15px;
+}
+.addlocation-listing p {
+    font-size: 13px;
+}
+}
+
+@media screen and (max-width:820px) {
+.header-rightmenu ul li { padding-right: 4px; }
+.header-rightmenu .dropdown-toggle i
+{
+	width: 28px;
+	height: 28px;
+	line-height: 28px;
+	font-size: 19px;
+}
+body.vertical-layout.vertical-menu-modern.menu-collapsed .main-menu.expanded, body.vertical-layout.vertical-menu-modern.menu-collapsed .navbar .navbar-header.expanded { width: 200px; }
+.chatreply-box textarea { width: 71%; }
+.associate-tablist li a { padding: 0 15px 10px; }
+.notelist, .chatlisting { margin-bottom: 20px; }
+.ssnfromgroup input { width: 25%; }
+}
+
+@media screen and (max-width:767px) {
+.logoiconmd { display: none; }
+.logotext
+{
+	display: block !IMPORTANT;
+	width: 100%;
+}
+.navbar-semi-dark
+{
+	height: auto;
+	background: inherit;
+}
+.header-navbar .navbar-header { width: 100%; }
+.main-menu.menu-fixed
+{
+	top: 61px;
+	padding-top: 6px;
+}
+.header-navbar.navbar-with-menu .navbar-container
+{
+	width: 100%;
+	display: table;
+	padding: 0 1rem;
+	margin: 0;
+	height: auto;
+}
+#navbar-mobile.navbar-collapse .navbar-nav
+{
+	margin: 0;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-flow: row wrap;
+	-moz-box-orient: horizontal;
+	-moz-box-direction: normal;
+	-ms-flex-flow: row wrap;
+	flex-flow: row wrap;
+}
+li.mobile-menu.d-md-none.mr-auto i, .open-navbar-container i
+{
+	font-size: 35px !important;
+	color: #fff;
+	padding-top: 0px;
+}
+.header-rightmenu i.la.la-user { font-size: 26px; }
+.header-rightmenu li span
+{
+	font-size: 16px;
+	line-height: 28px;
+}
+.toptitlebar h2
+{
+	font-size: 17px;
+	line-height: 33px;
+}
+.inputsearch, .allselectbox { margin-right: 0; }
+.easy-autocomplete { width: 100% !important; }
+.nextdetails { width: 100%; }
+.noteuserdetail { width: 89%; }
+.noteuserdetail h4 small
+{
+	clear: inherit;
+	display: inline;
+	float: none;
+}
+.chatreply-box textarea
+{
+	width: 100%;
+	margin-bottom: 10px;
+}
+.chatreply-box button
+{
+	padding: 8px 15px;
+	float: right;
+	margin-bottom: 10px;
+}
+.noteuserdetail
+{
+	width: 85%;
+	display: table-column;
+}
+.notelist:after, .chatlisting:after
+{
+	clear: both;
+	display: block;
+	content: '';
+}
+.assigntimeduration ul li
+{
+	padding-right: 20px;
+	padding-left: 20px;
+	margin-bottom: 13px;
+}
+.assigntimeduration ul li h4 { font-size: 15px; }
+.assigntimeduration ul li h5 { font-size: 13px; }
+.filterdetailbox
+{
+	right: -4%;
+	width: 186%;
+	overflow-y: scroll;
+	height: 255px;
+}
+.filterapplybtn a { width: 21%; }
+body.vertical-layout.vertical-menu-modern .navbar .navbar-header { width: 100%; }
+.main-menu { display: none; }
+li.mobile-menu.d-md-none.mr-auto { margin-left: 10px; }
+li.d-md-none { margin-right: 0; }
+ul.navbar-nav.flex-row { padding: 10px 0; }
+.header-navbar .navbar-header { height: 56px; }
+.main-menu.menu-fixed { top: 55px; }
+.assignsearch ul li
+{
+	width: 31%;
+	margin-bottom: 10px;
+}
+.applicantsearch .associatenames, .assignsearch ul li input { margin: 0; }
+.assigntitle h3
+{
+	font-size: 17px;
+	margin-bottom: 10px;
+	line-height: 20px;
+}
+.filterbyselect { width: 58%; }
+.profileavaila ul li
+{
+	width: 29.33%;
+	margin-right: 20px;
+}
+.complateuser-detail.clearfix { margin-bottom: 5px; }
+.allsearch-listing ul li { width: auto; }
+.tabinnerrolelist ul li { width: 49.333%; }
+.makeoffer-detail .profileavaila ul li
+{
+	width: 29.333%;
+	margin-right: 16px;
+}
+.chatreply-box button
+{
+	padding: 8px 15px;
+	margin-right: 10px;
+}
+.col-xl-10.col-md-10.col-9.rightpaddingnone
+{
+	margin-left: 6px;
+	max-width: 80%;
+}
+.col-xl-2.col-md-2.col-3.leftpaddingnone
+{
+	max-width: 22%;
+	flex: 0 0 22%;
+}
+.associateuser img { width: 50%; }
+.roleskillsbox ul li, .compliancelist .uploadfilename, .locationpinbox li { margin-bottom: 5px; }
+.clientdetail-select {
+    margin-bottom: 13px;
+}
+}
+
+@media screen and (max-width:530px) {
+.noteuserdetail { width: 80%; }
+.noteuserdetail h4 small
+{
+	clear: both;
+	display: block;
+}
+.profileavaila ul li { width: 45%; }
+.compliancelist ul li { font-size: 13px; }
+.compliancelist ul li i { font-size: 18px; }
+.tabinnerrolelist ul li { width: 100%; }
+.skilladdboxs a { font-size: 14px; }
+.makeoffer-detail .profileavaila ul li
+{
+	width: 45.333%;
+	min-height: 220px;
+}
+.textstandard { width: 45%; }
+.mobile-clearclass:after
+{
+	clear: both;
+	display: block;
+	content: "";
+}
+.row.mobile-clearclass,.activityselect { width: 100%; }
+.activityselect .innerselectbox {
+    width: 170px;
+}
+
+}
+
+@media screen and (max-width:480px) {
+.notification-listing li p { display: inline; }
+.notification-listing p small
+{
+	width: 73%;
+	float: left;
+	clear: both;
+	display: block;
+}
+.actionitem ul li h5
+{
+	line-height: 49px;
+	font-size: 14px;
+}
+.actionitem ul li span
+{
+	width: 35px;
+	height: 35px;
+	font-size: 18px;
+	line-height: 35px;
+}
+.actionitem ul li span { margin-right: 5px; }
+.actionitem li a
+{
+	padding: 2px 6px;
+	font-size: 13px;
+	margin: 4px 8px 4px 0;
+}
+.actionitem ul li h5 { line-height: 35px; }
+.totaluserdetails, .userdetailbox { padding: 10px 0; }
+.header-navbar.navbar-with-menu .navbar-container { padding: 0 2px; }
+.topnavbar { padding: 10px 10px; }
+.topnavbar .col-3.col-md-5, .topnavbar .col-9.col-md-7
+{
+	max-width: 100%;
+	flex: 100%;
+}
+.toptitlebar h2
+{
+	line-height: 20px;
+	text-align: center;
+}
+.header-rightmenu
+{
+	float: none;
+	margin: auto;
+	text-align: center;
+	display: block;
+	width: 303px;
+}
+.header-rightmenu .dropdown-toggle i
+{
+	width: 25px;
+	height: 25px;
+	line-height: 25px;
+	font-size: 16px;
+}
+.userdestails img { width: 35%; }
+.associate-tablist li a { margin-top: 10px; }
+.noteuserdetail { width: 77.333%; }
+.resumeimagelist ul li h3 { font-size: 14px; }
+.assignsearch ul li { width: 100%; }
+.assouserid h4 i, .assousername h4 i, .assouserphone h4 i
+{
+	width: 17px;
+	height: 17px;
+	line-height: 17px;
+	font-size: 11px;
+}
+i.idicon { font-size: 11px !important; }
+.profileavaila ul li
+{
+	width: 100%;
+	min-height: auto;
+}
+.select2-container { width: 100% !important; }
+.innermenu-content
+{
+	left: 9px !important;
+	top: 98% !important;
+}
+li.has-sub.is-shown:hover i { transform: rotate(0) !important; }
+.col-xl-10.col-md-10.col-9.rightpaddingnone { max-width: 74%; }
+.col-xl-2.col-md-2.col-3.leftpaddingnone
+{
+	max-width: 28%;
+	flex: 0 0 24%;
+}
+.noteheader input { width: 38%; }
+.associateuser img { width: 97%; }
+}
+
+@media screen and (max-width:420px) {
+.makeoffer-detail .profileavaila ul li
+{
+	width: 100%;
+	min-height: auto;
+}
+.col-xl-10.col-md-10.col-9.rightpaddingnone { max-width: 67%; }
+.col-xl-2.col-md-2.col-3.leftpaddingnone
+{
+	max-width: 31%;
+	flex: 0 0 18%;
+}
+}
+
+@media screen and (max-width:360px) {
+.notificons { margin-right: 3px; }
+.notificontent { width: 80%; }
+.notification-listing li p { font-size: 13px; }
+.notification-listing li i
+{
+	width: 25px;
+	height: 25px;
+	line-height: 25px;
+	font-size: 17px !important;
+}
+.noteheader p { clear: both; }
+.noteheader p input { width: 102px; }
+.col-xl-10.col-md-10.col-9.rightpaddingnone { max-width: 62%; }
+.col-xl-2.col-md-2.col-3.leftpaddingnone
+{
+	max-width: 35%;
+	flex: 0 0 18%;
+}
+.ssnfromgroup input
+{
+	width: 24%;
+	padding: 10px 8px;
+}
+.assigntitle h3 { font-size: 16px; }
+.main-menu.menu-dark .navigation>li>a { padding: 7px 10px 7px 10px; }
+.main-menu.menu-dark .navigation>li ul { font-size: 13px; }
+.navigation > li:hover .menu-title { font-size: 15px; }
+.main-menu.menu-dark .navigation>li ul li>a { padding: 5px 10px 5px 13px; }
+}
+
+@media screen and (max-width:325px) {
+.header-rightmenu { width: 100%; }
+.header-rightmenu ul { margin-bottom: 0; }
+.header-rightmenu ul li
+{
+	padding-right: 0px;
+	float: none;
+	margin: 10px 0 0;
+}
+}

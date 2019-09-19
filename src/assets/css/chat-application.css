@@ -1,0 +1,92 @@
+.chat-application .app-content, .chat-application .content-right, .chat-application .content-wrapper, .chat-application .content-body { height : 100%; }
+.chat-application .content-wrapper { padding : 0 !important; }
+.chat-application .chats { padding: 0 10px 0 10px; }
+.chat-application .chats .chat-body
+{
+	display : block;
+	margin : 10px 30px 0 0;
+	overflow : hidden;
+}
+.chat-application .chats .chat-body .chat-content
+{
+	text-align : right;
+	position : relative;
+	display : block;
+	float : right;
+	padding : 8px 15px;
+	margin : 0 10px 10px 0;
+	clear : both;
+	color : #FFFFFF;
+	border-radius : 4px;
+}
+.chat-application .chats .chat-body .chat-content:before
+{
+	position : absolute;
+	top : 10px;
+	right : -10px;
+	width : 0;
+	height : 0;
+	content : '';
+	border : 5px solid transparent;
+	border-left-color : #1E9FF2;
+}
+.chat-application .chats .chat-body .chat-content + .chat-content:before { border-color : transparent; }
+.chat-application .chats .chat-body .chat-content p
+{
+	margin: 0;
+	color: #fff;
+	font-size: 11px;
+}
+.chat-application .chats .chat-avatar { float : right; }
+.chat-application .chats .chat-avatar .avatar
+{
+	width : 50px;
+	margin-top : -10px;
+}
+.chat-application .chats .time
+{
+	color : #BABFC7;
+	font-size : 12px;
+	text-align : center;
+	margin : 15px 0;
+}
+.chat-application .chats .chat-left .chat-avatar { float : left; }
+.chat-application .chats .chat-left .chat-body
+{
+	margin-right : 0;
+	margin-left : 30px;
+}
+.chat-application .chats .chat-left .chat-content
+{
+	text-align : left;
+	float : left;
+	margin : 0 0 10px 10px;
+	color : #6B6F82;
+	background-color : #EDEEF0;
+}
+.chat-application .chats .chat-left .chat-content + .chat-content:before { border-color : transparent; }
+.chat-application .chats .chat-left .chat-content:before
+{
+	right : auto;
+	left : -10px;
+	border-right-color : #EDEEF0;
+	border-left-color : transparent;
+}
+.chat-application .form-control-position { cursor : pointer; }
+.chat-application .form-control-position.control-position-right
+{
+	right : 18px;
+	top : 2px;
+	cursor : pointer;
+}
+.horizontal-layout.chat-application .app-content
+{
+	height : -webkit-calc(100% - 144px) !important;
+	height : -moz-calc(100% - 144px) !important;
+	height : calc(100% - 144px) !important;
+	min-height : -webkit-calc(100% - 144px) !important;
+	min-height : -moz-calc(100% - 144px) !important;
+	min-height : calc(100% - 144px) !important;
+	margin-top : 0 !important;
+}
+.horizontal-layout.chat-application .app-content .chat-app-window { height : -webkit-calc(100% - 83px) !important; }

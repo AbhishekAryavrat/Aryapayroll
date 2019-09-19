@@ -1,0 +1,126 @@
+/*-------------------------------------------------------
+     Skin blue Color Code Style Start - #0092ff
+---------------------------------------------------------*/
+
+/*** Page Top Loading - ***/
+.pace
+{
+	-webkit-pointer-events: none;
+	pointer-events: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+}
+.pace-inactive { display: none; }
+.pace .pace-progress
+{
+	background: #0092ff;
+	position: fixed;
+	z-index: 2000;
+	top: 0;
+	right: 100%;
+	width: 100%;
+	height: 3px;
+}
+html body .pace .pace-progress { background: #0092ff; }
+/*** Page Top Loading & ***/
+
+/***  Login Register - ***/
+.skin-blue .loginbutton, .skin-blue .header-navbar.navbar-with-menu .navbar-container { background: #0092ff; }
+.skin-blue .loginbutton:hover, .skin-blue .loginbutton:active { background: rgba(0, 146, 255, 0.8); }
+.loginbutton:focus, .loginbutton:active
+{
+	outline: none;
+	border: 0;
+}
+/*** Login Register & ***/
+
+/*** Dashboard - ****/
+.skin-blue .navbar-semi-dark, .skin-blue .button-effect, .skin-blue .select2-container--classic .select2-results__options .select2-results__option[aria-selected=true], .select2-container--default .select2-results__options .select2-results__option[aria-selected=true], .skin-blue .switchtoggle input:checked + label:after, .skin-blue .associate-tablist li a:before, .skin-blue .chatsendbutton a:hover, .skin-blue .chatreply-box button:hover, .chat-application .chats .chat-body .chat-content, .skin-blue .invitemorebtn, .skin-blue .savebluebutton, .skin-blue .availabilitybtn a, .skin-blue .complatebtn a{ background: #0092ff !important; }
+.skin-blue li.active, .skin-blue .viewbutton, .skin-blue .chatsendbutton a, .skin-blue .actionitem li a, .skin-blue .dropdetails a, .skin-blue .switchtoggle input:checked + label, .skin-blue .according-header .invitebtn, .skin-blue .chatreply-box button, .skin-blue .bluebutton, .skin-blue .filterdetailbox { border-color: #0092ff; }
+.skin-blue .chatsendbutton a:hover { color: #fff; }
+.skin-blue a, .skin-blue .viewbutton a, .skin-blue .notification-listing li p, .skin-blue .actionitem li a, .skin-blue .dropdetails a, .skin-blue .statuscard h4, .skin-blue .according-header .invitebtn, .resumeimagelist li i, .skin-blue .chatsendbutton a, .skin-blue .chatreply-box button, .skin-blue .bluebutton, .skin-blue .filterbutton a span, .skin-blue .roleskillsbox ul li i,.skin-blue .activityselect a { color: #0092ff; }
+.skin-blue .associate-tablist li a.active, .skin-blue a.addnewnotetext { color: #0092ff !important; }
+.skin-blue .actionitem ul li:hover .viewbutton, .skin-blue .dropdetails a:hover, .skin-blue .according-header .invitebtn:hover, .skin-blue .chatreply-box button:hover, .skin-blue .bluebutton:hover, .skin-blue .filterbutton a, .skin-blue .filterapplybtn a
+{
+	background: #0092ff;
+	color: #fff;
+}
+.skin-blue .managerdetbox li { background: rgba(0, 146, 255, 0.7); }
+.skin-blue .managerdetbox li:hover { background: rgba(0, 146, 255, 0.9); }
+.skin-blue .invitemorebtn:hover, .skin-blue .filterbutton a:hover, .skin-blue .filterapplybtn a:hover, .skin-blue .savebluebutton:hover, .skin-blue .availabilitybtn a:hover, .skin-blue .complatebtn a:hover { background: rgba(0, 146, 255, 0.8); }
+.skin-blue .filterdetailbox:before { border-bottom-color: #0092ff; }
+.skin-blue .disabledbtn { background: #a1d7ff !important; }
+.skin-blue .disabledbtn:hover { background: rgba(161, 215, 255, 0.8) !important; }
+.yellowbox
+{
+	background: #f9b513;
+	transition: all 0.5s ease;
+}
+.lightgreenbox
+{
+	background: #85be71;
+	transition: all 0.5s ease;
+}
+.orangebox
+{
+	background: #ea6109;
+	transition: all 0.5s ease;
+}
+.purplebox
+{
+	background: #3f51b5;
+	transition: all 0.5s ease;
+}
+.bluebox
+{
+	background: #0382cf;
+	transition: all 0.5s ease;
+}
+.redbox
+{
+	background: #b31e26;
+	transition: all 0.5s ease;
+}
+.greenbox
+{
+	background: #009900 !important;
+	transition: all 0.5s ease;
+}
+.greeicontext { color: #18D031; }
+.graycancelbtn { background: #8a8a8a; }
+.graycancelbtn:hover { background: rgba(138, 138, 138, 0.7); }
+.yellowbox:hover { background: rgba(249, 181, 19, 0.8); }
+.lightgreenbox:hover { background: rgba(133, 190, 113, 0.8); }
+.orangebox:hover { background: rgba(234, 97, 9, 0.8); }
+.purplebox:hover { background: rgba(63, 81, 181, 0.8); }
+.bluebox:hover { background: rgba(3, 130, 207, 0.8); }
+.redbox:hover { background: rgba(179, 30, 38, 0.8); }
+.greenbackground { background: #5bda6a; }
+.redbackground { background: #ff6666; }
+.resetredbtn { background: #b31e26 }
+.resetredbtn:hover { background: rgba(179, 30, 38, 0.8); }
+.greentextcolor { color: #19af52; }
+.warningtextcolor { color: #f6ac32; }
+.blacktextcolor { color: #000; }
+.cancelgraytext { color: #999; }
+.redicontext { color: #b31e26; }
+.blueicontext { color: #0092ff; }
+/****Dark Blue Color Start******/
+.form-control, .select2-container--default .select2-selection--single .select2-selection__arrow b, select.select2.form-control.select2-hidden-accessible, .select2-container--default .select2-selection--single { border-color: #3875bb; }
+.assigntitle h3 { color: #4a90e2; }
+/****Dark Blue Color End******/
+
+
+/*** Dashboard & ***/
+/*-------------------------------------------------------
+     Skin blue Color Code Style Start & #0092ff
+---------------------------------------------------------*/
+
+
+/****  Heding Color Code - #403f3f ****/
+.actionitem h3, .notification h3 { color: #403f3f; }
+/****  Heding Color Code & ****/
+
+/*dark color code- #6B6F82*/
+/*heading color- #403f3f*/

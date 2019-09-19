@@ -1,0 +1,97 @@
+<!-- BEGIN VENDOR JS-->
+<script src="../../../assets/vendors/vendors.min.js"></script>
+<script src="../../../assets/vendors/easy-autocomplete/js/jquery.easy-autocomplete.min.js"></script>
+<script src="../../../assets/vendors/forms/selects/js/select2.full.min.js"></script>
+<script src="../../../assets/vendors/forms/selects/js/form-select2.min.js"></script>
+<!-- BEGIN VENDOR JS-->
+
+<!-- BEGIN MODERN JS-->
+<script src="../../../assets/vendors/jQuery-slimScroll/js/jquery.slimscroll.js"></script>
+<!--<script src="js/app-menu.min.js"></script> 
+<script src="js/app.min.js"></script> -->
+<!-- END MODERN JS-->
+<script>
+var options = {
+
+  data: [ 
+  {"name": "Derika ", "code": "Associate","type":"a"}, 
+  {"name": "Sujen ", "code": "Associate","type":"a"}, 
+  {"name": "Lovina ", "code": "Associate","type":"a"}, 
+
+  {"name": "Megan", "code": "Client","type":"c"}, 
+  {"name": "Lerry", "code": "Client","type":"c"}, 
+
+  {"name": "Need Truck Driver", "code": "Assignment","type":"assignment"}, 
+  {"name": "Picking at warehouse ", "code": "Assignment","type":"assignment"}, 
+
+],
+
+  getValue: "name",
+
+  list: {	
+    maxNumberOfElements: 4,
+    match: {
+      enabled: true
+    }
+  },
+template: {
+		type: "custom",
+		method: function(value, item) {
+			if(item.type=='a'){
+			return "<div class='dropsearch clearfix'><span>Associate</span><div class='dropdetails clearfix'><h4>"+item.name+"<small>ID: DF35GN</small></h4><p><a href='#'>profile</a><a href='#'>invite</a></p></div></div>";
+			} else if(item.type=='c') {
+        return "<div class='dropsearch clearfix'><span>Client</span><div class='secdropdetails'><h4>"+item.name+" <small>ID: DF35GN</small></h4></div></div>";
+      } else {
+			return "<div class='dropsearch clearfix'><span>Client</span><div class='secdropdetails'><h4>"+item.name+" <small>ID: DF35GN</small></h4></div></div>";
+			}
+			
+		}
+	}
+};
+
+$(".countries").easyAutocomplete(options);
+
+</script>
+<script type="text/javascript">
+    $(function(){
+      $('#notifications').slimScroll({
+          alwaysVisible: true
+      });
+	});
+	$(document).ready(function(e) {
+        $("#menubaricons").click(function(e) {
+            $(".main-menu").toggle();
+        });
+    });
+</script>
+<script>
+//  Notifications & messages scrollable
+if($('.sidebar-fixed').length > 0){
+    $('.sidebar-fixed').perfectScrollbar({
+        theme:"dark"
+    });
+}
+
+    $(function(){
+      $('#noteorderlist').slimScroll({
+          alwaysVisible: true
+      });
+	  $('#userchatlist').slimScroll({
+          alwaysVisible: true
+      });
+	});
+
+
+$(document).ready(function() {
+   $("#userprofile").click(function() {
+    $("#userdetailbox").slideToggle();
+}); 
+});
+$(document).ready(function() {
+    $(".menu-toggle").click(function() {
+       $(".main-menu").toggle(); 
+    });
+});
+
+
+</script>

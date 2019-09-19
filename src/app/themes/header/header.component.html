@@ -1,0 +1,124 @@
+<!-- fixed-top-->
+
+
+<nav class="header-navbar navbar-expand-md navbar navbar-with-menu navbar-without-dd-arrow fixed-top navbar-semi-dark navbar-shadow">
+    <div class="navbar-wrapper">
+      <div class="navbar-header">
+        <ul class="navbar-nav flex-row">
+          <li class="mobile-menu d-md-none mr-auto"><a class="menu-toggle hidden-xs" href="#"><i class="la la-bars"></i></a></li>
+          <li class="logotext"><a href="index.php">
+            <h1 class="logotext"><strong>Aryavrat</strong></h1>
+            <img class="logoiconmd" src="images/logo-icon.png" alt=""></a></li>
+          <li class="d-md-none"><a class="open-navbar-container" data-toggle="collapse" data-target="#navbar-mobile" aria-expanded="false"><i class="la la-ellipsis-v"></i></a></li>
+        </ul>
+      </div>
+      <div class="navbar-container content">
+        <div class="collapse navbar-collapse" id="navbar-mobile">
+          <div class="topnavbar">
+            <div class="row">
+              <div class="col-3 col-md-5">
+                <div class="toptitlebar"> 
+                  <!-- <a href="#" class="menubaricon"><i class="la la-bars" id="menubaricons"></i></a>-->
+                  <h2>Aryavrat Payroll</h2>
+                </div>
+              </div>
+              <div class="col-9 col-md-7">
+                <div class="header-rightmenu">
+                  <ul>
+                    <li class="dropdown dropdown-user"> <a class="dropdown-toggle" href="#" data-toggle="dropdown"><i class="la la-plus"></i></a>
+                      <div class="dropdown-menu arrow"><a class="dropdown-item" href="assignment.php"><i class="ft-user"></i> Assignment</a><a class="dropdown-item" href="associate-list.php"><i class="ft-mail"></i> Associate</a><a class="dropdown-item" href="client-list.php"><i class="ft-check-square"></i> Client</a> </div>
+                    </li>
+                    <li>
+                      <div class="nav-search">
+                        <input id="countries" class="countries" placeholder="Search for clients, associates, assignments" />
+                      </div>
+                    </li>
+                    <li><a href="#"><i class="la la-user"></i><span>John Doe</span></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="main-menu menu-fixed menu-dark ">
+    <div class="main-menu-content">
+      <ul class="navigation navigation-main">
+        <li class="activea"><a href="index.php"><i class="la la-home"></i><span class="menu-title">Dashboard</span></a></li>
+        <li class="nav-item"><a href="#"><i class="la la-list"></i><span class="menu-title">Applicants </span> </a>
+          <ul class="menu-content">
+            <li><a class="menu-item" href="applicant-list.php">Applicant List</a></li>
+            <li class="has-sub is-shown"><a class="menu-item" href="#">Applicant Process <i class="la la-angle-down"></i></a>
+              <ul class="menu-content innermenu-content">
+                <li><a class="menu-item" href="waiting-for-phone-screen.php">Waiting for Phone Screen</a></li>
+                <li><a class="menu-item" href="waiting-for-completed-app.php">Waiting for Completed App</a></li>
+                <li><a class="menu-item" href="no-office-visit-scheduled.php">App Complete no. Branch Interview</a></li>
+                <li><a class="menu-item" href="scheduled-interviews.php">Scheduled Interviews</a></li>
+                <li><a class="menu-item" href="pending-background-check.php">Pending Background Check</a> </li>
+              </ul>
+            </li>
+            <li><a class="menu-item" href="compliance.php">Compliance</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"> <a class="menu-item" href="#"><i class="la la-user"></i> <span class="menu-title" >Associates </span></a>
+          <ul class="menu-content">
+            <!--<li><a class="menu-item" href="javascript:void(0);">Mass upload</a></li>-->
+            <li><a class="menu-item" href="add-new-associate.php">Add New Associate</a></li>
+            <li class="has-sub is-shown"><a class="menu-item" href="#">Associates <i class="la la-angle-down"></i></a>
+              <ul class="menu-content innermenu-content">
+                <li><a class="menu-item" href="associate-list.php">List</a></li>
+                <li><a class="menu-item" href="available-associate.php">By Availability</a></li>
+                <li><a class="menu-item" href="associate-inventory.php">By Skills</a> </li>
+              </ul>
+            </li>
+            <li><a class="menu-item" href="cancel-assignment-pay-report.php">Associate Cancellation Report </a></li>
+            <li><a class="menu-item" href="blacklisted-associate.php">Blacklisted Associates</a></li>
+            <li><a class="menu-item" href="background-check.php">Background Status</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"> <a class="menu-item" href="#" data-i18n="nav.templates.vert.main"><i class="la la-users"></i> <span class="menu-title">Clients</span></a>
+          <ul class="menu-content">
+            <li class="has-sub is-shown"><a class="menu-item" href="#" >Client Applicants <i class="la la-angle-down"></i></a>
+              <ul class="menu-content innermenu-content">
+                <li><a class="menu-item" href="new-client-requests.php">New Client Requests</a></li>
+                <li><a class="menu-item" href="pending-dnb-credit-check.php">Pending DNB Credit Check</a> </li>
+                <li><a class="menu-item" href="pending-site-safety-survey.php">Pending Site Safety Survey</a></li>
+                <li><a class="menu-item" href="pending-client-service-agreement.php">Pending Client Services Agreement</a></li>
+              </ul>
+            </li>
+            <li><a class="menu-item" href="new-client.php">New  Client</a></li>
+            <li><a class="menu-item" href="client-list.php">Client List</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"> <a class="menu-item" href="#" data-i18n="nav.templates.vert.main"><i class="la la-file-text-o"></i> <span class="menu-title">Assignments </span></a>
+          <ul class="menu-content">
+            <li><a class="menu-item" href="assignment.php">Assignment List</a></li>
+            <li><a class="menu-item" href="assignment-history.php">Assignment History</a></li>
+            <li><a class="menu-item" href="scheduled-shifts.php">Scheduled Shifts</a></li>
+            <li><a class="menu-item" href="shift-change-report.php">Shifts Change list </a></li>
+            <li><a class="menu-item" href="time-off-requests.php">Timeoff Requests</a></li>
+            <li><a class="menu-item" href="cancel-assignment-report.php">Cancelled Assignments</a></li>
+            <li><a class="menu-item" href="associate-feedback.php">Associate Feedback</a></li>
+            <li><a class="menu-item" href="client-feedback.php">Client Feedback </a></li>
+          </ul>
+        </li>
+        <li class="nav-item"> <a class="menu-item" href="#" data-i18n="nav.templates.vert.main"><i class="la la-calendar"></i> <span class="menu-title">Timesheets </span></a>
+          <ul class="menu-content">
+            <li><a class="menu-item" href="timesheet-details.php">Timesheet</a></li>
+            <li><a class="menu-item" href="javascript:void(0);">Billing</a></li>
+            <li class="has-sub is-shown"><a class="menu-item" href="#" >Disputes <i class="la la-angle-down"></i></a>
+              <ul class="menu-content innermenu-content">
+                <li><a class="menu-item" href="pending-associate-response.php">Pending Associate Response </a></li>
+                <li><a class="menu-item" href="javascript:void(0);">Pending Agent Action </a> </li>
+                <li><a class="menu-item" href="javascript:void(0);">Pending Escalate</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="activity-board.php"><i class="la la-file-code-o"></i><span class="menu-title">Activity Board</span></a></li>
+      </ul>
+    </div>
+  </div>
+  

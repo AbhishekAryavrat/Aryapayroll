@@ -1,0 +1,188 @@
+body.vertical-layout.vertical-menu-modern .main-menu {
+  -webkit-transition : 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+       -o-transition : 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+     -moz-transition : 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+          transition : 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+  -webkit-transform : translate3d(0, 0, 0);
+     -moz-transform : translate3d(0, 0, 0);
+          transform : translate3d(0, 0, 0);
+  -webkit-backface-visibility : hidden;
+     -moz-backface-visibility : hidden;
+          backface-visibility : hidden;
+}
+body.vertical-layout.vertical-menu-modern .main-menu li a span {
+  -webkit-animation : 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) 0s normal forwards 1 fadein;
+     -moz-animation : 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) 0s normal forwards 1 fadein;
+       -o-animation : 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) 0s normal forwards 1 fadein;
+          animation : 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) 0s normal forwards 1 fadein;
+}
+
+.header-navbar .navbar-header {
+  float : left;
+  width : 200px;
+}
+
+body.vertical-layout.vertical-menu-modern.menu-expanded .navbar.navbar-brand-center .navbar-header {
+  float : left;
+  width : auto;
+}
+
+body.vertical-layout.vertical-menu-modern.menu-expanded .navbar .navbar-container {
+  margin-left : 200px;
+}
+body.vertical-layout.vertical-menu-modern.menu-expanded .main-menu {
+  width : 45px; height:100%;
+}
+body.vertical-layout.vertical-menu-modern.menu-expanded .main-menu .navigation .navigation-header .ft-minus {
+  display : none;
+}
+body.vertical-layout.vertical-menu-modern.menu-expanded .main-menu .navigation > li > a > i {
+  margin-right : 0px;
+}
+
+body.vertical-layout.vertical-menu-modern.menu-expanded .main-menu .navigation > li > a > i:before {
+  font-size : 1.4rem;
+}
+body.vertical-layout.vertical-menu-modern.menu-expanded .main-menu .navigation > li > a > span.badge {
+  position : absolute;
+  right : 20px;
+}
+
+body.vertical-layout.vertical-menu-modern.menu-expanded .main-menu .navigation li.has-sub .has-sub > a:not(.mm-next):after {
+  top : 8px;
+}
+body.vertical-layout.vertical-menu-modern.menu-expanded .main-menu .navigation li.open > a:not(.mm-next):after {
+  -webkit-transform : rotate(90deg);
+     -moz-transform : rotate(90deg);
+      -ms-transform : rotate(90deg);
+       -o-transform : rotate(90deg);
+          transform : rotate(90deg);
+}
+body.vertical-layout.vertical-menu-modern.menu-expanded .main-menu .main-menu-footer {
+  width : 230px;
+}
+
+body.vertical-layout.vertical-menu-modern.menu-expanded .content, body.vertical-layout.vertical-menu-modern.menu-expanded .footer {
+  margin-left : 45px;
+}
+
+body.vertical-layout.vertical-menu-modern.menu-expanded .navbar-brand-center .content, body.vertical-layout.vertical-menu-modern.menu-expanded .navbar-brand-center .footer {
+  margin-left : 0;
+}
+
+body.vertical-layout.vertical-menu-modern.menu-collapsed .navbar .navbar-header {
+  float : left;
+  width : 60px;
+}
+body.vertical-layout.vertical-menu-modern.menu-collapsed .navbar .navbar-header .modern-nav-toggle {
+  display : none;
+}
+body.vertical-layout.vertical-menu-modern.menu-collapsed .navbar .navbar-header.expanded {
+  width : 230px;
+  z-index : 1000;
+}
+body.vertical-layout.vertical-menu-modern.menu-collapsed .navbar .navbar-header.expanded .modern-nav-toggle {
+  display : block;
+}
+body.vertical-layout.vertical-menu-modern.menu-collapsed .navbar .navbar-header.expanded .navbar-brand .brand-text {
+  -webkit-animation : 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) 0s normal forwards 1 fadein;
+     -moz-animation : 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) 0s normal forwards 1 fadein;
+       -o-animation : 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) 0s normal forwards 1 fadein;
+          animation : 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) 0s normal forwards 1 fadein;
+}
+body.vertical-layout.vertical-menu-modern.menu-collapsed .navbar .navbar-header .navbar-brand .brand-text {
+  -webkit-animation : 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) 0s normal forwards 1 fadeout;
+     -moz-animation : 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) 0s normal forwards 1 fadeout;
+       -o-animation : 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) 0s normal forwards 1 fadeout;
+          animation : 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) 0s normal forwards 1 fadeout;
+}
+
+body.vertical-layout.vertical-menu-modern.menu-collapsed .navbar.navbar-brand-center .navbar-header {
+  float : left;
+  width : auto;
+}
+
+body.vertical-layout.vertical-menu-modern.menu-collapsed .navbar .navbar-brand {
+  padding : 17px 0;
+}
+
+body.vertical-layout.vertical-menu-modern.menu-collapsed .navbar .navbar-container {
+  margin-left : 60px;
+}
+
+body.vertical-layout.vertical-menu-modern.menu-collapsed .main-menu {
+  width : 60px;
+  -webkit-transition : 300ms ease all;
+       -o-transition : 300ms ease all;
+     -moz-transition : 300ms ease all;
+          transition : 300ms ease all;
+  -webkit-backface-visibility : hidden;
+     -moz-backface-visibility : hidden;
+          backface-visibility : hidden;
+  -webkit-transform : translate3d(0, 0, 0);
+     -moz-transform : translate3d(0, 0, 0);
+          transform : translate3d(0, 0, 0);
+}
+body.vertical-layout.vertical-menu-modern.menu-collapsed .main-menu .main-menu-footer {
+  width : 60px;
+}
+
+
+@media (min-width: 576px) {
+  body.vertical-layout.vertical-menu-modern.menu-collapsed.menu-flipped .main-menu {
+    right : 0;
+  }
+  body.vertical-layout.vertical-menu-modern.menu-collapsed.menu-flipped .main-menu span.menu-title {
+    right : 60px;
+  }
+  body.vertical-layout.vertical-menu-modern.menu-collapsed.menu-flipped .main-menu ul.menu-content {
+    right : 60px;
+    left : inherit;
+  }
+}
+
+
+
+@media (min-width: 992px) {
+  body.vertical-layout.vertical-menu-modern.menu-flipped .content {
+    margin : 0;
+    margin-right : 230px;
+  }
+  body.vertical-layout.vertical-menu-modern.menu-flipped .navbar .navbar-header {
+    float : right;
+  }
+  body.vertical-layout.vertical-menu-modern.menu-flipped .navbar .navbar-container {
+    margin : 0;
+    margin-right : 230px;
+  }
+  body.vertical-layout.vertical-menu-modern.menu-flipped .footer {
+    margin : 0;
+    margin-right : 230px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  body.vertical-layout.vertical-menu-modern .main-menu {
+    width : 60px;
+  }
+  body.vertical-layout.vertical-menu-modern .main-menu .main-menu-footer {
+    width : 230px;
+  }
+  body.vertical-layout.vertical-menu-modern .navbar .navbar-header {
+    width : 60px;
+  }
+  body.vertical-layout.vertical-menu-modern .content, body.vertical-layout.vertical-menu-modern .footer {
+    margin-left : 60px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  body.vertical-layout.vertical-menu-modern.menu-expanded .navbar .navbar-container {
+    margin-left : 0 !important;
+  }
+  body.vertical-layout.vertical-menu-modern.menu-expanded .content, body.vertical-layout.vertical-menu-modern.menu-expanded .footer {
+    margin-left : 0 !important;
+  }
+
+}
+
