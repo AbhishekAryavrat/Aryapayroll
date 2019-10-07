@@ -15,17 +15,16 @@ export class ListComponent implements OnInit {
 
   ngOnInit() {
     this.getListData();
-    this.sortingValue = "ASC";
-    this.sortingId = "user_id";
+    this.sortingValue = "asc";
+    this.sortingId = "asso_uid";
   }
 
 //Method for get data show on table
     getListData(){
       try{
         this.api.getData().subscribe((data) =>{
-          //this.sortingId = data.data.sorting_creteria.applicant_id;
+          // this.sortingId = data.data.sorting_creteria;
           this.listData = data.data.application_list;
-
 
         })
       }catch(err){
@@ -65,7 +64,7 @@ export class ListComponent implements OnInit {
   commonSortApi(){
     try{
     this.api.sortData(this.sortingId,this.sortingValue).subscribe((data)=>{
-      this.listData = data.data.models;
+      this.listData = data.data.application_list;
     })
   }
   catch(err){

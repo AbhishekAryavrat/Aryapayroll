@@ -156,8 +156,7 @@
                                                     <div class="notificons"><i class="la la-check greenbackground"></i>
                                                     </div>
                                                     <div class="notificontent">
-                                                        <p>{{ list.by_user_name}} <span
-                                                                class="blacktextcolor">{{ list.title }}</span></p>
+                                                        <p> <span class="blacktextcolor">{{ list.notification_text }}</span></p>
                                                         <p class="nextdetails"><small>| {{ list.created_at}}</small>
                                                             <span class="dismiss-text" style="cursor: pointer"
                                                                 (click)="remove(list.alert_id)">Dismiss</span></p>

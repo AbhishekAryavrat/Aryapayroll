@@ -22,6 +22,8 @@ export class ApiService {
 
 
   sortData(sortingId: String, sortingValue: String): Observable<any> {
+    console.log("abhis", sortingValue);
+    console.log( sortingId);
     let apiUrl = `${this.endpoint}/applications/index?jwt_token=${this.jwtToken}&user_id_sort=${sortingId}.${sortingValue}`;
     return this.http.get(apiUrl).pipe(
       catchError(this.errorMgmt)

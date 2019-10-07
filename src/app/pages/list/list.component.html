@@ -18,8 +18,8 @@
                                         <li class="innerselectbox">
                                             <select class="hide-search  innerselectbox"
                                                 (change)="sortValue($event.target.value)">
-                                                <option value="ASC">Ascending</option>
-                                                <option value="DESC">Descending</option>
+                                                <option value="asc">Ascending</option>
+                                                <option value="desc">Descending</option>
                                             </select>
                                         </li>
 
@@ -27,10 +27,12 @@
                                             <select class="hide-search  innerselectbox"
                                                 (change)="sortId($event.target.value)">
                                                 <option value="" selected disabled>-----Sorting------</option>
-                                                <option value="application_id">Applicant Id</option>
+                                                <option value="asso_uid">Applicant Id</option>
                                                 <option value="asso_name">Applicant Name</option>
-                                                <option value="asso_uid">Associative ID</option>
-                                                <option value="created_at">Created At</option>
+                                                <option value="task_title">Assignment</option>
+                                                <option value="created_at">Applicant Date</option>
+                                                <option value="category_name">Role</option>
+                                                <option value="phone_interview_status">Status</option>
                                             </select>
                                         </li>
 
@@ -50,18 +52,18 @@
                                         <th><a href="#">Applicant Id</a></th>
                                         <th><a href="#">Applicant Name</a></th>
                                         <th><a href="#">Contact Info</a></th>
-                                        <th><a href="#">Created At</a></th>
-                                        <th><a href="#">Email/Name</a></th>
-                                        <th><a href="#">Associative ID</a></th>
-                                        <th><a href="#">User ID</a></th>
-                                        <th><a href="#">Office Interview Status</a></th>
+                                        <th><a href="#">Application Date</a></th>
+                                        <th><a href="#">Assignment</a></th>
+                                        <th><a href="#">Role</a></th>
+                                        <th><a href="#">Resume</a></th>
+                                        <th><a href="#">Status</a></th>
                                         <th class=" column-width60">Action</th>
                                     </tr>
                                 </thead>
                                 <tbody *ngFor="let list of listData">
                                     <tr>
                                         <td class="associatename">
-                                            <p><a href="#">{{ list.application_id }}</a></p>
+                                            <p><a href="#">{{ list.asso_uid }}</a></p>
                                             <p><a href="#">In-Active</a></p>
                                         </td>
                                         <td class="associatename">
@@ -69,18 +71,18 @@
                                             <p>New</p>
                                         </td>
                                         <td>{{ list.primary_phone }}</td>
-                                        <td>{{ list.stage_date }}</td>
+                                        <td>{{ list.created_at }}</td>
                                         <td class="associatename">
-                                            <p><a href="#">{{ list.primary_email }}</a></p>
-                                            <p><a href="#">{{ list.reg_name }}</a></p>
+                                            <p><a href="#">{{ list.task_title }}</a></p>
+                                            <p><a href="#">{{ list.task_title_1 }}</a></p>
 
                                         </td>
-                                        <td>{{list.asso_uid}}</td>
+                                        <td>{{list.category_name}}</td>
                                         <td class="associatename">
-                                            <p><a href="#">{{list.user_id}}</a></p>
+                                            <p><a href="#">{{list.phone_interview_status_resume}}</a></p>
                                         </td>
                                         <td class="associatename">
-                                            <p>{{list.office_interview_status}}</p>
+                                            <p>{{list.phone_interview_status_status}}</p>
                                         </td>
                                         <td class="invitebutton">
                                             <div class="pendingactionlist ellipsisicon"><i
