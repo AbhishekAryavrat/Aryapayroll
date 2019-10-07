@@ -1,8 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { HeaderComponent } from './themes/header/header.component';
-import { FooterComponent } from './themes/footer/footer.component';
 import { ListComponent } from './pages/list/list.component';
+import { DashboardComponent } from './pages/dashboard/dashboard.component';
 
 
 const routes: Routes = [
@@ -11,8 +10,12 @@ const routes: Routes = [
     component:ListComponent,
   },
   {
+    path:'dashboard',
+    component:DashboardComponent,
+  },
+  {
     path:'',
-    redirectTo:'list',
+    redirectTo:'dashboard',
     pathMatch:'full',
   },
 ];

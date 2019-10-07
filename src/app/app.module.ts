@@ -9,6 +9,8 @@ import { FooterComponent } from './themes/footer/footer.component';
 import { SidebarComponent } from './themes/sidebar/sidebar.component';
 import { ListComponent } from './pages/list/list.component';
 import { HttpClientModule } from '@angular/common/http';
+import { DashboardComponent } from './pages/dashboard/dashboard.component';
+import { ApiService } from './services/api.service';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,8 @@ import { HttpClientModule } from '@angular/common/http';
     HeaderComponent,
     FooterComponent,
     SidebarComponent,
-    ListComponent
+    ListComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
@@ -25,7 +28,7 @@ import { HttpClientModule } from '@angular/common/http';
     HttpClientModule,
     NgHttpLoaderModule.forRoot(),
   ],
-  providers: [],
+  providers: [ApiService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

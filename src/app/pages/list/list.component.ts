@@ -17,7 +17,6 @@ export class ListComponent implements OnInit {
     this.getListData();
     this.sortingValue = "ASC";
     this.sortingId = "user_id";
-    console.log(this.sortingValue);
   }
 
 //Method for get data show on table

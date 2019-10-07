@@ -1,0 +1,236 @@
+<body class="vertical-layout vertical-menu-modern menu-expanded skin-blue fixed-navbar" data-open="click"
+    data-menu="vertical-menu-modern" data-col="2-columns" data-gr-c-s-loaded="true" cz-shortcut-listen="true">
+    <app-header></app-header>
+    <div class="app-content content">
+        <div class="content-wrapper">
+            <ng-http-loader spinner="sk-wave"></ng-http-loader>
+            <div class="content-body">
+                <div class="totaluserdetails">
+                    <div class="row" *ngFor="let list of dailyStatus">
+                        <div class="col-md-3 box-border-right">
+                            <div class="userdetailbox">
+                                <h4>Active Assignments</h4>
+                                <h3>{{ list.active_assignment }}</h3>
+                            </div>
+                        </div>
+                        <div class="col-md-2 box-border-right">
+                            <div class="userdetailbox">
+                                <h4>New Associates</h4>
+                                <h3>{{ list.active_associates }}</h3>
+                            </div>
+                        </div>
+                        <div class="col-md-2 box-border-right">
+                            <div class="userdetailbox">
+                                <h4>Shifts Today</h4>
+                                <h3>{{ list.today_shift }}</h3>
+                            </div>
+                        </div>
+                        <div class="col-md-2 box-border-right">
+                            <div class="userdetailbox">
+                                <h4>Shift Fill Rate</h4>
+                                <h3>{{ list.shift_fill_rate }}</h3>
+                            </div>
+                        </div>
+                        <div class="col-md-3 ">
+                            <div class="userdetailbox" *ngFor="let list of pendingData">
+                                <h4>Pending Bkgd. Check</h4>
+                                <h3>{{ list.pending_background_check}}</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="itemnotificationbox">
+                    <div class="row">
+                        <div class="col-12 col-md-6 middlewidth100">
+                            <div class="actionitem">
+                                <h3>Action items</h3>
+                                <ul *ngFor=" let list of actionItems">
+                                    <li class="clearfix"><span
+                                            class="yellowbox">{{ list.pending_applicant_profiles_count }}</span>
+                                        <h5>{{ list.pending_applicant_profiles_text }}</h5>
+                                        <a href="#" class="viewbutton">View</a>
+                                    </li>
+                                    <li class="clearfix"><span
+                                            class="lightgreenbox">{{ list.waiting_for_phone_screen_count }}</span>
+                                        <h5>{{ list.waiting_for_phone_screen_text }}</h5>
+                                        <a href="#" class="viewbutton">View</a>
+                                    </li>
+                                    <li class="clearfix"><span
+                                            class="orangebox">{{ list.passed_waiting_for_comp_app_count }}</span>
+                                        <h5>{{ list.passed_waiting_for_comp_app_text }}</h5>
+                                        <a href="#" class="viewbutton">View</a>
+                                    </li>
+                                    <li class="clearfix"><span
+                                            class="purplebox">{{ list.app_comp_no_branch_interview_count }}</span>
+                                        <h5>{{ list.app_comp_no_branch_interview_text }}</h5>
+                                        <a href="#" class="viewbutton">View</a>
+                                    </li>
+                                    <li class="clearfix"><span
+                                            class="bluebox">{{ list.scheduled_interviews_count }}</span>
+                                        <h5>{{ list.scheduled_interviews_text }}</h5>
+                                        <a href="#" class="viewbutton">View</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 middlewidth100">
+                            <div class="notification">
+                                <h3>Notifications</h3>
+                                <div class="notification-detail">
+                                    <!-- <div class="notification-head">
+                                        <div class="row">
+                                            <div class=" col-12 col-md-4 padding-0">
+                                                <div class="inputsearch">
+                                                    <div class="form-group position-relative">
+                                                        <input type="text" class="form-control" placeholder="Search">
+                                                        <div class="form-control-position"><i class="la la-search"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class=" col-12 col-md-4 padding-0">
+                                                <div class="allselectbox form-group">
+                                                    <select class="select2 form-control select2-hidden-accessible"
+                                                        tabindex="-1" aria-hidden="true">
+                                                        <optgroup label="Time Zone">
+                                                            <option value="ALL">All</option>
+                                                            <option value="SE">Select1</option>
+                                                        </optgroup>
+                                                        <optgroup label="select1 Time Zone">
+                                                            <option value="SE">Select2</option>
+                                                            <option value="SE">Select3</option>
+                                                            <option value="SE">Select4</option>
+                                                        </optgroup>
+                                                        <optgroup label="select2 Time Zone">
+                                                            <option value="SE">Select5</option>
+                                                            <option value="SE">Select6</option>
+                                                            <option value="SE">Select7</option>
+                                                        </optgroup>
+                                                    </select><span
+                                                        class="select2 select2-container select2-container--default"
+                                                        dir="ltr" style="width: 228.484px;"><span
+                                                            class="selection"><span
+                                                                class="select2-selection select2-selection--single"
+                                                                role="combobox" aria-haspopup="true"
+                                                                aria-expanded="false" tabindex="0"
+                                                                aria-labelledby="select2-dhe0-container"><span
+                                                                    class="select2-selection__rendered"
+                                                                    id="select2-dhe0-container"
+                                                                    title="All">All</span><span
+                                                                    class="select2-selection__arrow"
+                                                                    role="presentation"><b
+                                                                        role="presentation"></b></span></span></span><span
+                                                            class="dropdown-wrapper" aria-hidden="true"></span></span>
+                                                </div>
+                                            </div>
+                                            <div class=" col-12 col-md-4 padding-0">
+                                                <div class="dayselectbox form-group">
+                                                    <select class="select2 form-control select2-hidden-accessible"
+                                                        tabindex="-1" aria-hidden="true">
+                                                        <option value="La">Last 7 days</option>
+                                                        <option value="SE">Last 2 days</option>
+                                                        <option value="La">Last 7 days</option>
+                                                        <option value="SE">Last 2 days</option>
+                                                    </select><span
+                                                        class="select2 select2-container select2-container--default"
+                                                        dir="ltr" style="width: 238.484px;"><span
+                                                            class="selection"><span
+                                                                class="select2-selection select2-selection--single"
+                                                                role="combobox" aria-haspopup="true"
+                                                                aria-expanded="false" tabindex="0"
+                                                                aria-labelledby="select2-5syz-container"><span
+                                                                    class="select2-selection__rendered"
+                                                                    id="select2-5syz-container" title="Last 7 days">Last
+                                                                    7 days</span><span class="select2-selection__arrow"
+                                                                    role="presentation"><b
+                                                                        role="presentation"></b></span></span></span><span
+                                                            class="dropdown-wrapper" aria-hidden="true"></span></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> -->
+                                    <div class="slimScrollDiv"
+                                        style="position: relative; overflow: hidden; width: auto; height: 305px;">
+                                        <div class="notification-listing" id="notifications"
+                                            style="overflow: hidden; width: auto; height: 305px;">
+                                            <ul *ngFor="let list of notificationsData">
+                                                <li class="clearfix">
+                                                    <div class="notificons"><i class="la la-check greenbackground"></i>
+                                                    </div>
+                                                    <div class="notificontent">
+                                                        <p>{{ list.by_user_name}} <span
+                                                                class="blacktextcolor">{{ list.title }}</span></p>
+                                                        <p class="nextdetails"><small>| {{ list.created_at}}</small>
+                                                            <span class="dismiss-text" style="cursor: pointer"
+                                                                (click)="remove(list.alert_id)">Dismiss</span></p>
+                                                    </div>
+                                                </li>
+                                                <!-- <li class="clearfix">
+                                                    <div class="notificons"><i
+                                                            class="la la-thumbs-up greenbackground"></i></div>
+                                                    <div class="notificontent">
+                                                        <p>Kenneth Johnson <span class="blacktextcolor">give high shift
+                                                                rating on</span> People for foundation</p>
+                                                        <p class="nextdetails">Maintenance <small>| 07-07-2018 07:04
+                                                                AM</small> <span class="dismiss-text">Dismiss</span></p>
+                                                    </div>
+                                                </li>
+                                                <li class="clearfix">
+                                                    <div class="notificons"><i
+                                                            class="la la-thumbs-down redbackground"></i></div>
+                                                    <div class="notificontent">
+                                                        <p>Kenneth Johnson <span class="blacktextcolor">gave low shift
+                                                                rating on</span> People for foundation</p>
+                                                        <p class="nextdetails">Maintenance <small>| 07-07-2018 07:04
+                                                                AM</small> <span class="dismiss-text">Dismiss</span></p>
+                                                    </div>
+                                                </li>
+                                                <li class="clearfix">
+                                                    <div class="notificons"><i
+                                                            class="la la-thumbs-up greenbackground"></i></div>
+                                                    <div class="notificontent">
+                                                        <p>Kenneth Johnson <span class="blacktextcolor">give high shift
+                                                                rating on</span> People for foundation</p>
+                                                        <p class="nextdetails">Maintenance <small>| 07-07-2018 07:04
+                                                                AM</small> <span class="dismiss-text">Dismiss</span></p>
+                                                    </div>
+                                                </li>
+                                                <li class="clearfix">
+                                                    <div class="notificons"><i
+                                                            class="la la-thumbs-up greenbackground"></i></div>
+                                                    <div class="notificontent">
+                                                        <p>Kenneth Johnson <span class="blacktextcolor">give high shift
+                                                                rating on</span> People for foundation</p>
+                                                        <p class="nextdetails">Maintenance <small>| 07-07-2018 07:04
+                                                                AM</small> <span class="dismiss-text">Dismiss</span></p>
+                                                    </div>
+                                                </li>
+                                                <li class="clearfix">
+                                                    <div class="notificons"><i
+                                                            class="la la-thumbs-down redbackground"></i></div>
+                                                    <div class="notificontent">
+                                                        <p>Kenneth Johnson <span class="blacktextcolor">gave low shift
+                                                                rating on</span> People for foundation</p>
+                                                        <p class="nextdetails">Maintenance <small>| 07-07-2018 07:04
+                                                                AM</small> <span class="dismiss-text">Dismiss</span></p>
+                                                    </div>
+                                                </li> -->
+                                            </ul>
+                                        </div>
+                                        <div class="slimScrollBar"
+                                            style="background: rgb(0, 0, 0); width: 5px; position: absolute; top: 0px; opacity: 0.4; display: block; border-radius: 7px; z-index: 99; right: 1px; height: 194.207px;">
+                                        </div>
+                                        <div class="slimScrollRail"
+                                            style="width: 5px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(51, 51, 51); opacity: 0.2; z-index: 90; right: 1px;">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <app-footer></app-footer>
+</body>
