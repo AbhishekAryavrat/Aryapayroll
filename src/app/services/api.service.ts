@@ -9,11 +9,12 @@ import { catchError } from 'rxjs/operators';
 export class ApiService {
 
   endpoint:String = "http://43.224.1.48:8080/ondemand/ronak";
+   jwtToken:String = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJuYW1lIjoic3VwZXJhZG1pbiIsImRhdGUiOiIyMDE5LTA2LTA2In0.hErPL1-DP6ELm0vL3AeRWr09n5sv4R34_rej8zU_8HU";
   headers = new HttpHeaders().set('Contant-Type', 'application/json');
   constructor(private http: HttpClient) { }
 
   getData(): Observable<any> {
-    let apiUrl = "http://43.224.1.48:8080/ondemand/ronak/applications/index?branch_id=1";
+    let apiUrl = `${this.endpoint}/applications/index?jwt_token=${this.jwtToken}`;
     return this.http.get(apiUrl).pipe(
       catchError(this.errorMgmt)
     )
@@ -21,26 +22,17 @@ export class ApiService {
 
 
   sortData(sortingId: String, sortingValue: String): Observable<any> {
-    let apiUrl = `http://43.224.1.48:8080/ondemand/ronak/applications/index?branch_id=1&sort_by=${sortingId}&sort=${sortingValue}`;
+    let apiUrl = `${this.endpoint}/applications/index?jwt_token=${this.jwtToken}&user_id_sort=${sortingId}.${sortingValue}`;
     return this.http.get(apiUrl).pipe(
       catchError(this.errorMgmt)
     )
   }
 
-  // getDashboardData(): Observable<any> {
-  //   try{
-  //     let apiUrl = `${this.endpoint}/branch/branch/index?jwt_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJuYW1lIjoic3VwZXJhZG1pbiIsImRhdGUiOiIyMDE5LTA2LTA2In0.hErPL1-DP6ELm0vL3AeRWr09n5sv4R34_rej8zU_8HU`;
-  //   return this.http.get(apiUrl).pipe(
-  //     catchError(this.errorMgmt)
-  //   )
-  //   }catch(err){
-  //     console.log(err.message);
-  //   }
-  // }
+
 
   getDashboardData():Observable<any>{
     try{
-      let api = `${this.endpoint}/branch/branch/index?jwt_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJuYW1lIjoic3VwZXJhZG1pbiIsImRhdGUiOiIyMDE5LTA2LTA2In0.hErPL1-DP6ELm0vL3AeRWr09n5sv4R34_rej8zU_8HU`;
+      let api = `${this.endpoint}/branch/branch/index?jwt_token=${this.jwtToken}`;
       return this.http.get(api).pipe(
 
       )
@@ -50,7 +42,7 @@ export class ApiService {
   }
     deleteNotification(alertId:String):Observable<any>{
       try{
-        let apiUrl = `${this.endpoint}/branch/branch/deleteuseralert?jwt_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJuYW1lIjoic3VwZXJhZG1pbiIsImRhdGUiOiIyMDE5LTA2LTA2In0.hErPL1-DP6ELm0vL3AeRWr09n5sv4R34_rej8zU_8HU&alert_id=${alertId}`;
+        let apiUrl = `${this.endpoint}/branch/branch/deleteuseralert?jwt_token=${this.jwtToken}&alert_id=${alertId}`;
         return this.http.get(apiUrl).pipe(
           catchError(this.errorMgmt)
         )

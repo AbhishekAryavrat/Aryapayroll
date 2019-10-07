@@ -23,9 +23,10 @@ export class ListComponent implements OnInit {
     getListData(){
       try{
         this.api.getData().subscribe((data) =>{
-          this.sortingId = data.sort.sortVar;
-          this.listData = data.data.models;
-  
+          //this.sortingId = data.data.sorting_creteria.applicant_id;
+          this.listData = data.data.application_list;
+
+
         })
       }catch(err){
         console.log(err);
