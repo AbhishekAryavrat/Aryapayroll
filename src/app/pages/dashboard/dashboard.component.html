@@ -1,83 +1,79 @@
-<body class="vertical-layout vertical-menu-modern menu-expanded skin-blue fixed-navbar" data-open="click"
-    data-menu="vertical-menu-modern" data-col="2-columns" data-gr-c-s-loaded="true" cz-shortcut-listen="true">
-    <app-header></app-header>
-    <div class="app-content content">
-        <div class="content-wrapper">
-            <ng-http-loader spinner="sk-wave"></ng-http-loader>
-            <div class="content-body">
-                <div class="totaluserdetails">
-                    <div class="row" *ngFor="let list of dailyStatus">
-                        <div class="col-md-3 box-border-right">
-                            <div class="userdetailbox">
-                                <h4>Active Assignments</h4>
-                                <h3>{{ list.active_assignment }}</h3>
-                            </div>
+<div class="app-content content">
+    <div class="content-wrapper">
+        <ng-http-loader spinner="sk-wave"></ng-http-loader>
+        <div class="content-body">
+            <div class="totaluserdetails">
+                <div class="row" *ngFor="let list of dailyStatus">
+                    <div class="col-md-3 box-border-right">
+                        <div class="userdetailbox">
+                            <h4>Active Assignments</h4>
+                            <h3>{{ list.active_assignment }}</h3>
                         </div>
-                        <div class="col-md-2 box-border-right">
-                            <div class="userdetailbox">
-                                <h4>New Associates</h4>
-                                <h3>{{ list.active_associates }}</h3>
-                            </div>
+                    </div>
+                    <div class="col-md-2 box-border-right">
+                        <div class="userdetailbox">
+                            <h4>New Associates</h4>
+                            <h3>{{ list.active_associates }}</h3>
                         </div>
-                        <div class="col-md-2 box-border-right">
-                            <div class="userdetailbox">
-                                <h4>Shifts Today</h4>
-                                <h3>{{ list.today_shift }}</h3>
-                            </div>
+                    </div>
+                    <div class="col-md-2 box-border-right">
+                        <div class="userdetailbox">
+                            <h4>Shifts Today</h4>
+                            <h3>{{ list.today_shift }}</h3>
                         </div>
-                        <div class="col-md-2 box-border-right">
-                            <div class="userdetailbox">
-                                <h4>Shift Fill Rate</h4>
-                                <h3>{{ list.shift_fill_rate }}</h3>
-                            </div>
+                    </div>
+                    <div class="col-md-2 box-border-right">
+                        <div class="userdetailbox">
+                            <h4>Shift Fill Rate</h4>
+                            <h3>{{ list.shift_fill_rate }}</h3>
                         </div>
-                        <div class="col-md-3 ">
-                            <div class="userdetailbox" *ngFor="let list of pendingData">
-                                <h4>Pending Bkgd. Check</h4>
-                                <h3>{{ list.pending_background_check}}</h3>
-                            </div>
+                    </div>
+                    <div class="col-md-3 ">
+                        <div class="userdetailbox" *ngFor="let list of pendingData">
+                            <h4>Pending Bkgd. Check</h4>
+                            <h3>{{ list.pending_background_check}}</h3>
                         </div>
                     </div>
                 </div>
-                <div class="itemnotificationbox">
-                    <div class="row">
-                        <div class="col-12 col-md-6 middlewidth100">
-                            <div class="actionitem">
-                                <h3>Action items</h3>
-                                <ul *ngFor=" let list of actionItems">
-                                    <li class="clearfix"><span
-                                            class="yellowbox">{{ list.pending_applicant_profiles_count }}</span>
-                                        <h5>{{ list.pending_applicant_profiles_text }}</h5>
-                                        <a href="#" class="viewbutton">View</a>
-                                    </li>
-                                    <li class="clearfix"><span
-                                            class="lightgreenbox">{{ list.waiting_for_phone_screen_count }}</span>
-                                        <h5>{{ list.waiting_for_phone_screen_text }}</h5>
-                                        <a href="#" class="viewbutton">View</a>
-                                    </li>
-                                    <li class="clearfix"><span
-                                            class="orangebox">{{ list.passed_waiting_for_comp_app_count }}</span>
-                                        <h5>{{ list.passed_waiting_for_comp_app_text }}</h5>
-                                        <a href="#" class="viewbutton">View</a>
-                                    </li>
-                                    <li class="clearfix"><span
-                                            class="purplebox">{{ list.app_comp_no_branch_interview_count }}</span>
-                                        <h5>{{ list.app_comp_no_branch_interview_text }}</h5>
-                                        <a href="#" class="viewbutton">View</a>
-                                    </li>
-                                    <li class="clearfix"><span
-                                            class="bluebox">{{ list.scheduled_interviews_count }}</span>
-                                        <h5>{{ list.scheduled_interviews_text }}</h5>
-                                        <a href="#" class="viewbutton">View</a>
-                                    </li>
-                                </ul>
-                            </div>
+            </div>
+            <div class="itemnotificationbox">
+                <div class="row">
+                    <div class="col-12 col-md-6 middlewidth100">
+                        <div class="actionitem">
+                            <h3>Action items</h3>
+                            <ul *ngFor=" let list of actionItems">
+                                <li class="clearfix"><span
+                                        class="yellowbox">{{ list.pending_applicant_profiles_count }}</span>
+                                    <h5>{{ list.pending_applicant_profiles_text }}</h5>
+                                    <a href="#" class="viewbutton">View</a>
+                                </li>
+                                <li class="clearfix"><span
+                                        class="lightgreenbox">{{ list.waiting_for_phone_screen_count }}</span>
+                                    <h5>{{ list.waiting_for_phone_screen_text }}</h5>
+                                    <a href="#" class="viewbutton">View</a>
+                                </li>
+                                <li class="clearfix"><span
+                                        class="orangebox">{{ list.passed_waiting_for_comp_app_count }}</span>
+                                    <h5>{{ list.passed_waiting_for_comp_app_text }}</h5>
+                                    <a href="#" class="viewbutton">View</a>
+                                </li>
+                                <li class="clearfix"><span
+                                        class="purplebox">{{ list.app_comp_no_branch_interview_count }}</span>
+                                    <h5>{{ list.app_comp_no_branch_interview_text }}</h5>
+                                    <a href="#" class="viewbutton">View</a>
+                                </li>
+                                <li class="clearfix"><span class="bluebox">{{ list.scheduled_interviews_count }}</span>
+                                    <h5>{{ list.scheduled_interviews_text }}</h5>
+                                    <a href="#" class="viewbutton">View</a>
+                                </li>
+                            </ul>
                         </div>
-                        <div class="col-12 col-md-6 middlewidth100">
-                            <div class="notification">
-                                <h3>Notifications</h3>
-                                <div class="notification-detail">
-                                    <!-- <div class="notification-head">
+                    </div>
+                    <div class="col-12 col-md-6 middlewidth100">
+                        <div class="notification">
+                            <h3>Notifications</h3>
+                            <div class="notification-detail">
+                                <!-- <div class="notification-head">
                                         <div class="row">
                                             <div class=" col-12 col-md-4 padding-0">
                                                 <div class="inputsearch">
@@ -150,19 +146,20 @@
                                         </div>
                                     </div> -->
 
-                                        <div class="notification-listing" id="abhishek">
-                                            <ul *ngFor="let list of notificationsData">
-                                                <li class="clearfix">
-                                                    <div class="notificons"><i class="la la-check greenbackground"></i>
-                                                    </div>
-                                                    <div class="notificontent">
-                                                        <p> <span class="blacktextcolor">{{ list.notification_text }}</span></p>
-                                                        <p class="nextdetails"><small>| {{ list.created_at}}</small>
-                                                            <span class="dismiss-text" style="cursor: pointer"
-                                                                (click)="remove(list.alert_id)">Dismiss</span></p>
-                                                    </div>
-                                                </li>
-                                                <!-- <li class="clearfix">
+                                <div class="notification-listing" id="abhishek">
+                                    <ul *ngFor="let list of notificationsData">
+                                        <li class="clearfix">
+                                            <div class="notificons"><i class="la la-check greenbackground"></i>
+                                            </div>
+                                            <div class="notificontent">
+                                                <p> <span class="blacktextcolor">{{ list.notification_text }}</span>
+                                                </p>
+                                                <p class="nextdetails"><small>| {{ list.created_at}}</small>
+                                                    <span class="dismiss-text" style="cursor: pointer"
+                                                        (click)="remove(list.alert_id)">Dismiss</span></p>
+                                            </div>
+                                        </li>
+                                        <!-- <li class="clearfix">
                                                     <div class="notificons"><i
                                                             class="la la-thumbs-up greenbackground"></i></div>
                                                     <div class="notificontent">
@@ -212,13 +209,7 @@
                                                                 AM</small> <span class="dismiss-text">Dismiss</span></p>
                                                     </div>
                                                 </li> -->
-                                            </ul>
-                                        </div>
-
-
-
-
-
+                                    </ul>
                                 </div>
                             </div>
                         </div>
@@ -227,5 +218,4 @@
             </div>
         </div>
     </div>
-    <app-footer></app-footer>
-</body>
+</div>
